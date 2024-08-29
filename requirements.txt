@@ -1,5 +1,12 @@
-fastapi==0.103.2
-uvicorn==0.23.2
-httpx==0.25.0
-python-dotenv==1.0.0
-pydantic==2.4.2
+fastapi==0.111.1
+uvicorn==0.30.1
+httpx==0.27.0
+python-dotenv==1.0.1
+pydantic==2.8.2
+pydantic-settings==2.4.0
+pydantic_core==2.20.1
+instructor==1.3.4
+anthropic==0.30.1 
+scrapfly-sdk==0.8.17
+
+
