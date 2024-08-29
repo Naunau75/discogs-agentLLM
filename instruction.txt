@@ -1,5 +1,5 @@
 Je voudrais créér une application web qui permette de poser des questions via le LLM de Claude 3.5 Sonnet.
 L'application devra permettre de poser des questions à Claude 3.5 Sonnet et d'afficher la réponse. Tu devras utiliser Anthropic pour l'api et instructor.
 Le site devra être responsive et moderne. Tu utiliseras fastAPI pour le backend et react pour le frontend.
-Le site a questionner est le suivant : https://www.discogs.com/fr/ et tu utiliseras Scrapfly pour faire du scraping sur tout le site.
-Voici le lien de la documentation : https://www.discogs.com/developers/
+Voici le lien de la documentation : https://www.discogs.com/developers/ pour discuter avec l'api de Discogs. Tu devrais discerner les informations importantes telles que le style musicale, l'artiste, l'année, un titre d'album dans le prompt afin de faire une requete via l'api de Discogs.
+Tu afficheras la réponse de la question posée à Claude 3.5 Sonnet et la confiance que tu as dans la réponse basée sur le résultat de la requete via l'api de Discogs.
