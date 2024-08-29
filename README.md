@@ -64,3 +64,26 @@ This project is a FastAPI-based web service that combines natural language proce
 Submit a music-related question.
 
 Request body:
+
+json
+{
+"answer": "string",
+"confidence": "float",
+"discogs_info": {
+"artist": "string",
+"title": "string",
+"year": "integer",
+"genre": "string"
+}
+}
+
+## Architecture
+
+1. Question Analysis: The input question is processed by Claude AI to extract relevant music information.
+2. Discogs Query: The extracted information is used to query the Discogs database.
+3. Response Generation: Claude AI generates a final response based on the original question and Discogs data.
+4. Confidence Scoring: A confidence score is assigned based on the quality of the Discogs results.
+
+## Error Handling
+
+The API uses extensive logging to track the flow of execution and capture any errors. Errors are logged and appropriate HTTP exceptions are raised with descriptive messages.
