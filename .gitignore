@@ -1,0 +1,39 @@
+# Environnement virtuel
+discogs-agentLLM/
+venv/
+env/
+.venv/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Fichiers de configuration
+.env
+
+# Logs
+*.log
+
+# Dossiers et fichiers spécifiques à React
+node_modules/
+/build
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers système
+.DS_Store
+Thumbs.db

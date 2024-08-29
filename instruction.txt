@@ -1,0 +1,5 @@
+Je voudrais créér une application web qui permette de poser des questions via le LLM de Claude 3.5 Sonnet.
+L'application devra permettre de poser des questions à Claude 3.5 Sonnet et d'afficher la réponse.
+Le site devra être responsive et moderne. Tu utiliseras fastAPI pour le backend et react pour le frontend.
+Le site a questionner est le suivant : https://www.discogs.com/fr/
+Voici le lien de la documentation : https://www.discogs.com/developers/
