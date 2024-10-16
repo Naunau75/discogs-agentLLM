@@ -1,6 +1,6 @@
 {
     "name": "discogs-project",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Discogs Project with llm ",
     "private": true
-  }
+}
