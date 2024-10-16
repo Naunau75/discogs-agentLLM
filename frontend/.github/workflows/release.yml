@@ -1,0 +1,41 @@
+on:
+    push:
+      branches:
+        - main
+  
+  name: Create Release
+  
+  jobs:
+    release:
+      name: Create Release
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+        issues: write
+        pull-requests: write
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4.1.6
+          with:
+            fetch-depth: 0
+            token: ${{ secrets.GITHUB_TOKEN }}
+  
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '20.8.1'
+  
+        - name: Install dependencies
+          run: npm install -g semantic-release @semantic-release/git @semantic-release/github conventional-changelog-conventionalcommits
+  
+        - name: Vérifier l'existence de package.json
+          run: |
+            if [ ! -f package.json ]; then
+              echo "Le fichier package.json n'existe pas. Création d'un fichier minimal."
+              echo '{"name":"nom-de-votre-projet","version":"0.0.0","description":"Description de votre projet","private":true}' > package.json
+            fi
+  
+        - name: Create Release
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          run: npx semantic-release
