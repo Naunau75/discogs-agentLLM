@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a FastAPI-based web service that combines natural language processing with music database querying to provide detailed answers to music-related questions. It utilizes Claude AI for question analysis and response generation, and the Discogs API for retrieving music information.
+This project is a FastAPI-based web service that combines natural language processing with music database querying to provide detailed answers to music-related questions. 
 
 ## Features
 
