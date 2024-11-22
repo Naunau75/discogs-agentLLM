@@ -1,5 +1,7 @@
 # Music Information Retrieval API
 
+[Documentation complète](https://music-info-retrieval-api.readthedocs.io/en/latest/)
+
 ## Overview
 
 This project is a FastAPI-based web service that combines natural language processing with music database querying to provide detailed answers to music-related questions. 
