@@ -1,6 +1,6 @@
 # Music Information Retrieval API
 
-[Documentation complète](https://music-info-retrieval-api.readthedocs.io/en/latest/)
+[Documentation complète](https://discogs-agentllm.readthedocs.io/en/latest/)
 
 ## Overview
 
